@@ -1,0 +1,8 @@
+*.pyc
+logs/django/*
+media/
+.idea/
+logs/*
+*.pid
+
+npm-debug.log

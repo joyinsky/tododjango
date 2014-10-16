@@ -1,0 +1,8 @@
+build-essential
+python-dev
+libpq-dev
+libmysqlclient-dev
+libc6
+nginx
+npm
+nodejs
