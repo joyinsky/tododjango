@@ -16,5 +16,8 @@ Todos.ApplicationAdapter = DS.DjangoRESTAdapter.extend({
   host: 'http://localhost:8000/api'
 });
 Todos.ApplicationSerializer = DS.DjangoRESTSerializer.extend({
+    keyForAttribute: function(attr) {
+        return Ember.String.underscore(attr).toLowerCase();
+    }
 });
 }(window));
