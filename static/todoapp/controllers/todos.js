@@ -16,7 +16,7 @@ Todos.TodosController = Ember.ArrayController.extend({
             });
 
             this.set('newTitle',  '');
-            todo.save()
+            todo.save();
         },
         clearCompleted: function() {
             var completed = this.filterBy('isCompleted', true);
@@ -62,13 +62,13 @@ Todos.TodoController = Ember.ObjectController.extend({
             if (Ember.isEmpty(this.get('model.title'))) {
                 this.send('removeTodo');
             } else {
-                this.get('model').save()
+                this.get('model').save();
             }
         },
         removeTodo: function () {
             var todo = this.get('model');
             todo.deleteRecord();
-            todo.save()
+            todo.save();
         }
     },
     isCompleted: function(key, value) {
