@@ -5,12 +5,12 @@
   <head>
     <meta charset="utf-8">
     <title>TodoMVC • Django • Ember.js</title>
-    <link rel="stylesheet" href="{% static "css/style.css" %}">
-    <script src="{% static "assets/jquery/dist/jquery.js" %}"></script>
+    {% css "css/style.css" %}
+    {% javascript "assets/jquery/dist/jquery.js" %}
     {% django_js jquery=false %}
-    <script src="{% static "assets/handlebars/handlebars.js" %}"></script>
-    <script src="{% static "assets/ember/ember.js" %}"></script>
-    <script src="{% static "assets/ember-data/ember-data.js" %}"></script>
+    {% javascript "assets/handlebars/handlebars.js" %}
+    {% javascript "assets/ember/ember.js" %}"
+    {% javascript "assets/ember-data/ember-data.js" %}
 
   </head>
   <body>
@@ -21,8 +21,9 @@
 
 
 
-    <script src="{% static "todoapp/app.js" %}" ></script>
-    <script src="{% static "todoapp/router.js" %}" ></script>
-    <script src="{% static "todoapp/models/todo.js" %}" ></script>
+    {% javascript "todoapp/app.js" %}
+    {% javascript "todoapp/router.js" %}
+    {% javascript "todoapp/models/todo.js" %}
+    {% javascript "todoapp/controllers/todos.js" %}
   </body>
 </html>
