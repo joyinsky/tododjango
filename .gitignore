@@ -4,5 +4,5 @@ media/
 .idea/
 logs/*
 *.pid
-
+*.sqlite3
 npm-debug.log
