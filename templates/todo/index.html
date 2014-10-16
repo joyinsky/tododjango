@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <title>Django • Ember.js • TodoMVC</title>
     <link rel="stylesheet" href="{% static "css/style.css" %}">
-    <script src="{% static "assets/jquery/dist/jquery.js" %}" ></script>
-    <script src="{% static "assets/handlebars/handlebars.js" %}" ></script>
-    <script src="{% static "assets/ember/ember.js" %}" ></script>
-    <script src="{% static "assets/ember-data/ember-data.js" %}" ></script>
+    <script src="{% static "assets/jquery/dist/jquery.js" %}"></script>
+    <script src="{% static "assets/handlebars/handlebars.js" %}"></script>
+    <script src="{% static "assets/ember/ember.js" %}"></script>
+    <script src="{% static "assets/ember-data/ember-data.js" %}"></script>
 
   </head>
   <body>
@@ -23,18 +23,12 @@
 
           <section id="main">
             <ul id="todo-list">
-              <li class="completed">
-                <input type="checkbox" class="toggle">
-                <label>Learn Ember.js</label><button class="destroy"></button>
-              </li>
+              {{#each}}
               <li>
-                <input type="checkbox" class="toggle">
-                <label>...</label><button class="destroy"></button>
+                <input id="todo{{ id }}" type="checkbox" class="toggle">
+                <label for="todo{{ id }}">{{ title }}</label><button class="destroy"></button>
               </li>
-              <li>
-                <input type="checkbox" class="toggle">
-                <label>Profit!</label><button class="destroy"></button>
-              </li>
+              {{/each}}
             </ul>
 
             <input type="checkbox" id="toggle-all">
