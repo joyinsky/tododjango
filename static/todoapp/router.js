@@ -1,3 +1,4 @@
+(function(Todos){
 Todos.Router.map(function() {
    this.resource('todos', {path: '/'}, function() {
        this.route('active');
@@ -39,3 +40,4 @@ Todos.TodosCompletedRoute = Ember.Route.extend({
         this.render('todos/index', {controller: controller});
     }
 });
+}(Todos));

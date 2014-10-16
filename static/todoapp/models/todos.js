@@ -1,3 +1,4 @@
+(function (Todos) {
 Todos.Todo = DS.Model.extend({
     title: DS.attr('string'),
     isCompleted: DS.attr('boolean')
@@ -21,3 +22,4 @@ Todos.Todo.FIXTURES = [
    isCompleted: false
  }
 ];
+}(Todos));

@@ -1,3 +1,4 @@
+(function(Todos){
 Todos.TodosController = Ember.ArrayController.extend({
     actions: {
         createTodo: function() {
@@ -84,3 +85,4 @@ Todos.TodoController = Ember.ObjectController.extend({
 
     isEditing: false
 });
+}(Todos));

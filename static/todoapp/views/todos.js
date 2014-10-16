@@ -1,3 +1,4 @@
+(function() {
 Todos.EditTodoView = Ember.TextField.extend({
     didInsertElement: function(){
         this.$().focus();
@@ -5,3 +6,4 @@ Todos.EditTodoView = Ember.TextField.extend({
 });
 
 Ember.Handlebars.helper('edit-todo', Todos.EditTodoView);
+}());
