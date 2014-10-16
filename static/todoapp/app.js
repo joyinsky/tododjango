@@ -7,7 +7,14 @@ window.Todos = Ember.Application.create({});
     // Fixture Adapter
    // Todos.ApplicationAdapter = DS.FixtureAdapter.extend();
 
-Todos.ApplicationAdapter = DS.LSAdapter.extend({
-   namespace: 'todos-emberjs'
+    // Local Storage Adapter
+//Todos.ApplicationAdapter = DS.LSAdapter.extend({
+//   namespace: 'todos-emberjs'
+//});
+
+Todos.ApplicationAdapter = DS.DjangoRESTAdapter.extend({
+  host: 'http://localhost:8000/api'
+});
+Todos.ApplicationSerializer = DS.DjangoRESTSerializer.extend({
 });
 }(window));
