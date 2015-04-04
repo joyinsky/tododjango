@@ -4,33 +4,15 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>TodoMVC • Django • Ember.js</title>
+    <title>TodoMVC • Django • React</title>
     {% css "css/style.css" %}
     {% javascript "assets/jquery/dist/jquery.js" %}
+    {% javascript "assets/react/react.js" %}
     {% django_js jquery=false %}
-    {% javascript "assets/handlebars/handlebars.js" %}
-    {% javascript "assets/ember/ember.js" %}"
-    {% javascript "assets/ember-data/ember-data.js" %}
-    {% javascript "assets/ember-localstorage-adapter/localstorage_adapter.js" %}
-    {% javascript "assets/ember-data-django-rest-adapter/build/ember-data-django-rest-adapter.js" %}
+    {% javascript "assets/react/JSXTransformer.js" %}"
 
   </head>
   <body>
-    <script type="text/x-handlebars" data-template-name="todos/index">
-        {% include "todo/todos_index.hbs" %}
-    </script>
 
-    <script type="text/x-handlebars" data-template-name="todos">
-        {% include "todo/todos.hbs" %}
-    </script>
-
-
-
-
-    {% javascript "todoapp/app.js" %}
-    {% javascript "todoapp/router.js" %}
-    {% javascript "todoapp/models/todos.js" %}
-    {% javascript "todoapp/controllers/todos.js" %}
-    {% javascript "todoapp/views/todos.js" %}
   </body>
 </html>

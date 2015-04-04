@@ -1,12 +1,12 @@
 {
-  "name": "mangoanalytics",
+  "name": "tododjango-react",
   "version": "0.1.0",
   "authors": [
-    "Luis Fernando Barrera <fernandob@nextortelecom.com>"
+    "Luis Fernando Barrera <luisfernando@informind.com>"
   ],
-  "description": "Telephony Analytics System",
-  "license": "Nextor General Licence",
-  "homepage": "www.mangoanalytics.org",
+  "description": "JS and Django Integrated System",
+  "license": "MIT Licence",
+  "homepage": "www.luisfernandobarrera.com/tododjango/react",
   "private": true,
   "ignore": [
     "**/.*",
@@ -18,9 +18,7 @@
   ],
   "dependencies": {
     "jquery": "~2.1.1",
-    "ember": ">= 1.7.0",
-    "ember-data": "~1.0.0-beta.7",
-    "ember-data-django-rest-adapter": "~1.0.6",
-    "ember-localstorage-adapter": "~0.4.0"
+    "react": "~0.13.1",
+    "showdown": "~0.4.0"
   }
 }
